@@ -9,7 +9,7 @@ function Navigation() {
     const [about, setAbout] = useState(false);
 
     const linkStyle = {
-        textDecoration: 'none',
+        
         color: '#0D3843'
     };
 
