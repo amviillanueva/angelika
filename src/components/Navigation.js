@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styled from 'styled-components';
 
 const Li = styled.li `
@@ -15,16 +15,21 @@ const A = styled.a `
 `
 
 function Navigation() {
+
+    const [home, setHome] = useState(true);
+    const [skill, setSkill] = useState(false);
+    const [about, setAbout] = useState(false);
+
     return (<nav className="navbar navbar-expand m-5">
         <ul className="navbar-nav mr-auto">
-            <Li active className="nav-item px-2">
-                <A className="nav-link" href="Home.js">HOME</A>
+            <Li active={home} className="nav-item px-2">
+                <A className="nav-link" href="" onClick={(e) => {setHome(true); setSkill(false); setAbout(false); e.preventDefault()}}>HOME</A>
             </Li>
-            <Li className="nav-item px-2">
-                <A className="nav-link" href="Home.js">SKILLS</A>
+            <Li active={skill} className="nav-item px-2">
+                <A className="nav-link" href="Skills.js" onClick={(e) => {setHome(false); setSkill(true); setAbout(false); e.preventDefault()}}>SKILLS</A>
             </Li>
-            <Li className="nav-item px-2">
-                <A className="nav-link" href="Home.js">ABOUT</A>
+            <Li active={about} className="nav-item px-2">
+                <A className="nav-link" href="" onClick={(e) => {setHome(false); setSkill(false); setAbout(true); e.preventDefault()}}>ABOUT</A>
             </Li>
         </ul>
         <ul className="navbar-nav ml-auto">
