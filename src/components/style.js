@@ -19,6 +19,10 @@ export const Theme = ({ children }) => (
     <ThemeProvider theme={theme}>{children}</ThemeProvider>
 );
 
+export const Body = styled.div `
+    margin: 5% 7%;
+`;
+
 export const Li = styled.li `
     border-bottom: ${props => props.active ? "4px solid rgb(76, 167, 188, 50%)" : "4px solid rgb(76, 167, 188, 100%)"};
 `;

@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../App.css';
+import { Body } from './style.js';
 
 import Navigation from './Navigation';
 import Home from './Home';
@@ -12,7 +13,7 @@ import Projects from './Projects';
 
 function App() {
   return (<Router>
-    <div className="App">
+    <Body>
       <Navigation />
       <Switch>
         <Route path="/" exact component={Home}/>
@@ -20,7 +21,7 @@ function App() {
         <Route path="/about" component={About}/>
         <Route path="/projects" component={Projects}/>
       </Switch>
-    </div>
+    </Body>
   </Router>);
 }
 
