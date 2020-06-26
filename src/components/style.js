@@ -6,8 +6,14 @@ export const Li = styled.li `
 export const A = styled.a `
     font-family: 'Montserrat', sans-serif;
     opacity: 1;
+    line-height: 0;
     &:hover {
         color: #0D3843;
         opacity: .7; 
     }
+`
+
+export const Div = styled.div `
+    margin-top: 5%;
+    height: 50vh;
 `

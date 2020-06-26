@@ -15,17 +15,17 @@ function Navigation() {
 
     return (<nav className="navbar navbar-expand">
         <ul className="navbar-nav mr-auto">
-            <Li active={home} className="nav-item px-2">
+            <Li active={home} className="nav-item p-2">
                 <A className="nav-link" onClick={(e) => {setHome(true); setSkill(false); setAbout(false); e.preventDefault()}}>
                     <Link to="/" style={linkStyle}>HOME</Link>
                 </A>
             </Li>
-            <Li active={skill} className="nav-item px-2">
+            <Li active={skill} className="nav-item p-2">
                 <A className="nav-link" onClick={(e) => {setHome(false); setSkill(true); setAbout(false); e.preventDefault()}}>
                     <Link to="/skills" style={linkStyle}>SKILLS</Link>
                 </A>
             </Li>
-            <Li active={about} className="nav-item px-2">
+            <Li active={about} className="nav-item p-2">
                 <A className="nav-link" onClick={(e) => {setHome(false); setSkill(false); setAbout(true); e.preventDefault()}}>
                     <Link to="/about" style={linkStyle}>ABOUT</Link>
                 </A>
