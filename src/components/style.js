@@ -1,6 +1,10 @@
 import React from 'react';
 import styled, { ThemeProvider, keyframes } from 'styled-components';
 
+/* font-family: 'Montserrat', sans-serif;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Playfair Display', serif; font-weight: 400 and 500*/
+
 const theme = {
     color: {
         title: '#0D3843',
