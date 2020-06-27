@@ -6,11 +6,11 @@ import image from './info/profile.png';
 
 function Home() {
     return (<Theme>
-        <Div className="container d-flex align-items-center justify-content-center flex-md-row flex-column">
-            <div className="p-4">
+        <Div home className="container d-flex align-items-center justify-content-center flex-md-row flex-column">
+            <div className="p-md-4 p-3">
                 <Img src={image} alt="profile" />
             </div>
-            <div className="p-4">
+            <div className="p-md-4 p-3">
                 <H1>HI, I'M ANGELIKA</H1>
                 <H1 bottom>VILLANUEVA</H1>
                 <Sub>Web Developer</Sub>

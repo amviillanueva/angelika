@@ -44,7 +44,10 @@ export const A = styled.a `
 `;
 
 export const Div = styled.div `
-    margin-top: 8%;
+    margin-top: ${props => props.home ? '8%' : '3%'};
+    @media(max-width: 720px) {
+        margin-top: 8%;
+    }
 `;
 
 export const H1 = styled.h1 `
@@ -53,6 +56,9 @@ export const H1 = styled.h1 `
     font-size: ${props => props.bottom ? '2.3rem' : '2.5rem'};
     font-weight: 800;
     margin-bottom: 0;
+    @media(max-width: 720px) {
+        font-size: 2rem;
+    }
 `;
 
 export const P = styled.p `
@@ -64,6 +70,9 @@ export const P = styled.p `
     &:hover {
         text-decoration: none;
         opacity: ${props => props.inline ? .8 : 1};
+    }
+    @media(max-width: 720px) {
+        font-size: ${props => props.inline ? '.7rem' : ''};
     }
 `;
 
@@ -97,4 +106,8 @@ export const Img = styled.img `
     padding: .7rem;
     border: 5px ${props => props.theme.color['line']}; 
     animation: ${line} 2s linear infinite;
+    @media(max-width: 720px) {
+        height: 12rem;
+        border-width: 4px;
+    }
 `;

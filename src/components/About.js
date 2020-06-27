@@ -1,9 +1,10 @@
 import React from 'react';
+import { Div } from './style';
 
 function About() {
-    return(<div className="container">
+    return(<Div className="container">
         <h2>About Page</h2>
-    </div>)
+    </Div>)
 }
 
 export default About;
