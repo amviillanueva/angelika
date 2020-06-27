@@ -2,7 +2,7 @@ import React from 'react';
 import { P, I } from './style';
 
 function ContactInfo(props) {
-  return (<div>
+  return (<div style={{lineHeight: '.2rem'}}>
     <a href={props.link} target="_blank" rel="noopener noreferrer">
         <I className={props.logo}></I>
         <P inline>{props.info}</P>

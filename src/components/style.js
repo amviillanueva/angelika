@@ -38,18 +38,20 @@ export const A = styled.a `
 `;
 
 export const Div = styled.div `
-    margin-top: 5%;
+    margin-top: 7%;
 `;
 
 export const H1 = styled.h1 `
     color: ${props => props.theme.color['title']};
-    font-family: ${props => props.theme.font['title']};
+    font-family: ${props => props.theme.font['mont']};
+    font-weight: 800;
 `;
 
 export const P = styled.p `
     color: ${props => props.theme.color['content']};
-    font-family: ${props => props.theme.font['content']};
+    font-family: ${props => props.theme.font['mont']};
     display: ${props => props.inline ? 'inline-block' : 'block'};
+    font-size: ${props => props.inline ? '.8rem' : ''};
     vertical-align: middle;
 `;
 
@@ -59,7 +61,7 @@ export const Sub = styled(P) `
 
 export const I = styled.i `
     color: ${props => props.theme.color['title']};
-    font-size: 2rem;
+    font-size: 1.8rem;
     margin-right: .5rem;
 `;
 

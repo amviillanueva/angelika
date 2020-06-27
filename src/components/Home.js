@@ -6,9 +6,12 @@ import image from './info/profile.png';
 
 function Home() {
     return (<Theme>
-        <Div className="container d-flex align-items-center justify-content-center flex-md-row flex-column-reverse">
-            <div className="p-5">
-                <H1>Hi, I'm Angelika</H1>
+        <Div className="container d-flex align-items-center justify-content-center flex-md-row flex-column">
+            <div className="p-4">
+                <Img src={image} alt="profile" />
+            </div>
+            <div className="p-4">
+                <H1>HI, I'M ANGELIKA</H1>
                 <Sub>an aspiring Web Developer</Sub>
                 {
                     contacts.map(contact =>
@@ -16,9 +19,7 @@ function Home() {
                     )
                 }
             </div>
-            <div className="p-5">
-                <Img src={image} alt="profile" />
-            </div>
+            
         </Div>
     </Theme>)
 }
