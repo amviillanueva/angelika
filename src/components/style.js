@@ -25,6 +25,9 @@ export const Body = styled.div `
 
 export const Li = styled.li `
     border-bottom: ${props => props.active ? "4px solid rgb(76, 167, 188, 50%)" : "4px solid rgb(76, 167, 188, 100%)"};
+    @media(max-width: 720px) {
+        border-width: 3px;
+    }
 `;
 
 export const A = styled.a `
@@ -34,6 +37,9 @@ export const A = styled.a `
     &:hover {
         color: ${props => props.theme.color['title']};
         opacity: .7; 
+    }
+    @media(max-width: 720px) {
+        font-size: .7rem;
     }
 `;
 
