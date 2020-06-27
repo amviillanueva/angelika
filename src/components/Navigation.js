@@ -38,13 +38,6 @@ function Navigation() {
                     </A>
                 </Li>
             </ul>
-            {/* <ul className="navbar-nav">
-                <li className="nav-item">
-                    <A className="nav-link">
-                        <Link to="/projects" style={linkStyle}>PROJECTS</Link>
-                    </A>
-                </li>
-            </ul> */}
         </nav>
     </Theme>);
 }

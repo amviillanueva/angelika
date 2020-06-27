@@ -12,7 +12,8 @@ function Home() {
             </div>
             <div className="p-4">
                 <H1>HI, I'M ANGELIKA</H1>
-                <Sub>an aspiring Web Developer</Sub>
+                <H1 bottom>VILLANUEVA</H1>
+                <Sub>Web Developer</Sub>
                 {
                     contacts.map(contact =>
                         <ContactInfo link={contact.link} logo={contact.logo} info={contact.info} />

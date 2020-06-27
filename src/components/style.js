@@ -38,31 +38,42 @@ export const A = styled.a `
 `;
 
 export const Div = styled.div `
-    margin-top: 7%;
+    margin-top: 8%;
 `;
 
 export const H1 = styled.h1 `
     color: ${props => props.theme.color['title']};
     font-family: ${props => props.theme.font['mont']};
+    font-size: ${props => props.bottom ? '2.3rem' : '2.5rem'};
     font-weight: 800;
+    margin-bottom: 0;
 `;
 
 export const P = styled.p `
     color: ${props => props.theme.color['content']};
     font-family: ${props => props.theme.font['mont']};
-    display: ${props => props.inline ? 'inline-block' : 'block'};
+    display: ${props => props.inline ? 'inline' : 'block'};
     font-size: ${props => props.inline ? '.8rem' : ''};
     vertical-align: middle;
+    &:hover {
+        text-decoration: none;
+        opacity: ${props => props.inline ? .8 : 1};
+    }
 `;
 
 export const Sub = styled(P) `
     color: ${props => props.theme.color['subTitle']};
+    font-weight: 600;
 `;
 
 export const I = styled.i `
     color: ${props => props.theme.color['title']};
-    font-size: 1.8rem;
+    font-size: 1.7rem;
     margin-right: .5rem;
+    vertical-align: middle;
+    &:hover {
+        opacity: .8;
+    }
 `;
 
 const line = keyframes`
