@@ -7,6 +7,7 @@ import { Body } from './style.js';
 
 import Navigation from './Navigation';
 import Home from './Home';
+import Skills from './Skills';
 import About from './About';
 import Projects from './Projects';
 
@@ -16,6 +17,7 @@ function App() {
       <Navigation />
       <Switch>
         <Route path="/" exact component={Home}/>
+        <Route path="/skills" component={Skills}/>
         <Route path="/about" component={About}/>
         <Route path="/projects" component={Projects}/>
       </Switch>

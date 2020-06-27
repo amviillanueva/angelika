@@ -77,7 +77,7 @@ const line = keyframes`
 
 export const Img = styled.img `
     height: 15rem;
-    padding: .8rem;
+    padding: .7rem;
     border: 5px ${props => props.theme.color['line']}; 
     animation: ${line} 2s linear infinite;
 `;
