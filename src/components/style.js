@@ -1,5 +1,5 @@
 import React from 'react';
-import styled, { ThemeProvider } from 'styled-components';
+import styled, { ThemeProvider, keyframes } from 'styled-components';
 
 /* font-family: 'Montserrat', sans-serif;
 font-family: 'Open Sans', sans-serif;
@@ -95,10 +95,21 @@ export const I = styled.i `
     }
 `;
 
+const line = keyframes`
+  from {
+    border-style: dashed;
+  }
+
+  to {
+    border-style: dashed;
+  }
+`;
+
 export const Img = styled.img `
     height: 15rem;
     padding: .7rem;
-    border: 5px dashed ${props => props.theme.color['line']}; 
+    border: 5px solid ${props => props.theme.color['line']}; 
+    animation: ${line} 2s linear infinite;
     @media(max-width: 720px) {
         height: 12rem;
         border-width: 4px;

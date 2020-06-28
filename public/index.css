@@ -4,3 +4,13 @@
     height:100%;
     z-index:-1;
 }
+
+#tl {
+    position: absolute;
+}
+
+#br {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
