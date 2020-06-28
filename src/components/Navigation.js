@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Theme, Li, A } from './style.js';
+import { Theme, Nav, Li, A } from './style.js';
 import { Link } from 'react-router-dom'
 
 function Navigation() {
@@ -15,7 +15,7 @@ function Navigation() {
     };
 
     return (<Theme>
-        <nav className="navbar navbar-expand justify-content-center">
+        <Nav className="navbar navbar-expand justify-content-center sticky-top">
             <ul className="navbar-nav">
                 <Li active={home} className="nav-item p-md-2 p-1">
                     <A className="nav-link" onClick={(e) => {setHome(true); setSkills(false); setAbout(false); setProjects(false); e.preventDefault()}}>
@@ -38,7 +38,7 @@ function Navigation() {
                     </A>
                 </Li>
             </ul>
-        </nav>
+        </Nav>
     </Theme>);
 }
 

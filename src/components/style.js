@@ -24,7 +24,30 @@ export const Theme = ({ children }) => (
 );
 
 export const Body = styled.div `
-    padding: 5% 7%;
+    margin: 0 12%;
+    max-height: 100vh;
+`;
+
+export const Tl = styled.img `
+    position: fixed;
+    user-select: none;
+    top: 0;
+    left: 0;
+    z-index: 2;
+`;
+
+export const Bl = styled.img `
+    position: fixed;
+    user-select: none;
+    bottom: 0;
+    right: 0;
+`;
+
+export const Nav = styled.nav `
+    background-color: white;
+    padding-top: 7%;
+    user-select: none;
+    z-index: 1;
 `;
 
 export const Li = styled.li `
@@ -48,7 +71,7 @@ export const A = styled.a `
 `;
 
 export const Div = styled.div `
-    margin-top: ${props => props.home ? '8%' : '3%'};
+    margin-top: ${props => props.home ? '10%' : '3%'};
     @media(max-width: 720px) {
         margin-top: 8%;
     }
@@ -110,6 +133,7 @@ export const Img = styled.img `
     padding: .7rem;
     border: 5px solid ${props => props.theme.color['line']}; 
     animation: ${line} 2s linear infinite;
+    user-select: none;
     @media(max-width: 720px) {
         height: 12rem;
         border-width: 4px;
