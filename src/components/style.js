@@ -24,7 +24,6 @@ export const Theme = ({ children }) => (
 );
 
 export const Body = styled.div `
-    margin: 0 12%;
     max-height: 100vh;
 `;
 
@@ -34,6 +33,9 @@ export const Tl = styled.img `
     top: 0;
     left: 0;
     z-index: 2;
+    @media(max-width: 900px) {
+        visibility: hidden;
+    }
 `;
 
 export const Bl = styled.img `
@@ -41,6 +43,9 @@ export const Bl = styled.img `
     user-select: none;
     bottom: 0;
     right: 0;
+    @media(max-width: 900px) {
+        visibility: hidden;
+    }
 `;
 
 export const Nav = styled.nav `
@@ -71,7 +76,7 @@ export const A = styled.a `
 `;
 
 export const Div = styled.div `
-    margin-top: ${props => props.home ? '10%' : '3%'};
+    margin-top: ${props => props.home ? '8%' : '3%'};
     @media(max-width: 720px) {
         margin-top: 8%;
     }
@@ -84,7 +89,7 @@ export const H1 = styled.h1 `
     font-weight: 800;
     margin-bottom: 0;
     @media(max-width: 720px) {
-        font-size: 2rem;
+        font-size: ${props => props.bottom ? '1.7rem' : '1.8rem'};;
     }
 `;
 
@@ -124,7 +129,7 @@ const line = keyframes`
   }
 
   to {
-    border-style: dashed;
+    border-style: dotted;
   }
 `;
 
