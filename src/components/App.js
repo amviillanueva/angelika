@@ -20,7 +20,7 @@ function App() {
       <Bl src={br} alt="bottom-right"></Bl>
       <Navigation />
       <Switch>
-        <Route path="/" exact component={Home}/>
+        <Route path="/angelika" exact component={Home}/>
         <Route path="/skills" component={Skills}/>
         <Route path="/about" component={About}/>
         <Route path="/projects" component={Projects}/>
