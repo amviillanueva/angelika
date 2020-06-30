@@ -1,3 +1,4 @@
+import dotenv from 'dotenv';
 import React, { useState } from 'react';
 import { Theme, Div, H1, Sub, Img } from './style';
 import ContactInfo from './ContactInfo'
@@ -8,6 +9,8 @@ import emailjs from 'emailjs-com';
 // https://stackoverflow.com/questions/53648652/how-to-use-environment-variables-in-github-page
 
 function Home() {
+    dotenv.config();
+
     const [mail, setMail] = useState({
         sender: "",
         email: "",
@@ -23,9 +26,10 @@ function Home() {
     const [success, setSuccess] = useState("none");
     const [danger, setDanger] = useState("none");
 
-    function sendMail() {
+    function sendMail(e) {
+        e.preventDefault()
         console.log(templateParams)
-        emailjs.send()
+        emailjs.send(process.env.REACT_APP_SERVICE_ID, process.env.REACT_APP_TEMPLATE_ID, templateParams, process.env.REACT_APP_USER_ID)
             .then((response) => {
                 console.log('SUCCESS!', response.status, response.text);
                 setSuccess("block");
@@ -95,11 +99,16 @@ function Home() {
                     <div className="modal-header">
                         <strong>Send me a Message!</strong>
                         <button type="button" className="close" data-dismiss="modal" aria-label="Close" 
-                            onClick={() => {setSuccess("none"); setDanger("none")}}>
+                            onClick={() => {setSuccess("none"); setDanger("none"); setMail(() => {
+                                return {
+                                    sender: "",
+                                    email: "",
+                                    message: ""
+                            }})}}>
                             <span aria-hidden="true">&times;</span>
                         </button>
                     </div>
-                    <form onSubmit={e => e.preventDefault()}>
+                    <form onSubmit={sendMail}>
                         <div className="modal-body">
                         <div className="alert alert-success" style={{display: success}}> Message Sent! </div>
                         <div className="alert alert-danger" style={{display: danger}}> Message not Sent </div>
@@ -115,7 +124,7 @@ function Home() {
                             </div>
                         </div>
                         <div className="modal-footer">
-                            <button type="submit" className="btn btn-info btn-sm px-3" onClick={sendMail}>Send</button>
+                            <button type="submit" className="btn btn-info btn-sm px-3">Send</button>
                         </div>
                     </form>
                 </div>
