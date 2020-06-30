@@ -16,8 +16,8 @@ import Projects from './Projects';
 function App() {
   return (<Router>
     <Body>
-      <Tl src={tl}></Tl>
-      <Bl src={br}></Bl>
+      <Tl src={tl} alt="top-left"></Tl>
+      <Bl src={br} alt="bottom-right"></Bl>
       <Navigation />
       <Switch>
         <Route path="/" exact component={Home}/>

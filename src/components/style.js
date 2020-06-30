@@ -1,5 +1,5 @@
 import React from 'react';
-import styled, { ThemeProvider, keyframes } from 'styled-components';
+import styled, { ThemeProvider } from 'styled-components';
 
 /* font-family: 'Montserrat', sans-serif;
 font-family: 'Open Sans', sans-serif;
@@ -28,27 +28,24 @@ export const Body = styled.div `
     width: 100vw;
 `;
 
-export const Tl = styled.img `
+const ImgBorder = styled.img `
     position: fixed;
     user-select: none;
     width: 23%;
-    top: 0;
-    left: 0;
     z-index: 2;
     @media(max-width: 900px) {
         visibility: hidden;
     }
 `;
 
-export const Bl = styled.img `
-    position: fixed;
-    user-select: none;
-    width: 23%;
+export const Tl = styled(ImgBorder) `
+    top: 0;
+    left: 0;
+`;
+
+export const Bl = styled(ImgBorder) `
     bottom: 0;
     right: 0;
-    @media(max-width: 900px) {
-        visibility: hidden;
-    }
 `;
 
 export const Nav = styled.nav `
@@ -65,7 +62,7 @@ export const Li = styled.li `
     }
 `;
 
-export const A = styled.a `
+export const A = styled.span `
     font-family: ${props => props.theme.font['mont']};
     opacity: 1;
     line-height: 0;
@@ -86,7 +83,7 @@ export const Footer = styled.footer `
 
 export const Div = styled.div `
     margin: ${props => props.home ? '' : '0 15%'};
-    margin-top: ${props => props.home ? '8%' : '3%'};
+    margin-top: ${props => props.home ? '7.2%' : '3%'};
     @media(max-width: 720px) {
         margin-top: 8%;
     }
@@ -104,7 +101,7 @@ export const H1 = styled.h1 `
 `;
 
 export const P = styled.p `
-    color: ${props => props.theme.color['content']};
+    color: ${props => props.theme.color['subTitle']};
     font-family: ${props => props.theme.font['mont']};
     display: ${props => props.inline ? 'inline' : 'block'};
     font-size: ${props => props.inline ? '.8rem' : ''};
@@ -133,21 +130,10 @@ export const I = styled.i `
     }
 `;
 
-const line = keyframes`
-  from {
-    border-style: dashed;
-  }
-
-  to {
-    border-style: dotted;
-  }
-`;
-
 export const Img = styled.img `
     height: 15rem;
     padding: .7rem;
-    border: 5px solid ${props => props.theme.color['line']}; 
-    animation: ${line} 2s linear infinite;
+    border: 5px dashed ${props => props.theme.color['line']}; 
     user-select: none;
     @media(max-width: 720px) {
         height: 12rem;
