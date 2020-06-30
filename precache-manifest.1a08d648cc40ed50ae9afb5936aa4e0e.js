@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "6780140726d42f70812d01f4719f8b59",
+    "revision": "18cfbb9b6fa9a7350278f8f7f22c29f0",
     "url": "/angelika/index.html"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/angelika/static/js/2.59927677.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "8e743467374e86136b0e",
-    "url": "/angelika/static/js/main.4c5cf095.chunk.js"
+    "revision": "d00ff399a32ce949e8fd",
+    "url": "/angelika/static/js/main.dac75e99.chunk.js"
   },
   {
     "revision": "a1dc123575041f1993ed",
