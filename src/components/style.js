@@ -25,11 +25,13 @@ export const Theme = ({ children }) => (
 
 export const Body = styled.div `
     max-height: 100vh;
+    width: 100vw;
 `;
 
 export const Tl = styled.img `
     position: fixed;
     user-select: none;
+    width: 23%;
     top: 0;
     left: 0;
     z-index: 2;
@@ -41,6 +43,7 @@ export const Tl = styled.img `
 export const Bl = styled.img `
     position: fixed;
     user-select: none;
+    width: 23%;
     bottom: 0;
     right: 0;
     @media(max-width: 900px) {
@@ -75,7 +78,14 @@ export const A = styled.a `
     }
 `;
 
+export const Footer = styled.footer `
+    position: fixed;
+    bottom: 0;
+    font-size: .5rem;
+`;
+
 export const Div = styled.div `
+    margin: ${props => props.home ? '' : '0 15%'};
     margin-top: ${props => props.home ? '8%' : '3%'};
     @media(max-width: 720px) {
         margin-top: 8%;
@@ -89,7 +99,7 @@ export const H1 = styled.h1 `
     font-weight: 800;
     margin-bottom: 0;
     @media(max-width: 720px) {
-        font-size: ${props => props.bottom ? '1.7rem' : '1.8rem'};;
+        font-size: ${props => props.bottom ? '1.6rem' : '1.7rem'};;
     }
 `;
 

@@ -2,7 +2,7 @@ import React from 'react';
 import { Theme, Div, H1, Sub, Img } from './style';
 import ContactInfo from './ContactInfo'
 import contacts from './info/contacts';
-import image from './info/profile.png';
+import image from './images/profile.png';
 
 function Home() {
     return (<Theme>

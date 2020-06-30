@@ -2,7 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Body, Tl, Bl } from './style.js';
+import { Body, Tl, Bl, Footer } from './style.js';
 
 import tl from './images/tl.png';
 import br from './images/br.png';
@@ -26,6 +26,7 @@ function App() {
         <Route path="/projects" component={Projects}/>
       </Switch>
     </Body>
+    <Footer>Angelika Villanueva &copy; {new Date().getFullYear()}</Footer>
   </Router>);
 }
 
