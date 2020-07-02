@@ -20,13 +20,13 @@ function App() {
       <Bl src={br} alt="bottom-right"></Bl>
       <Navigation />
       <Switch>
-        <Route path="/angelika" exact component={Home}/>
-        <Route path="/skills" component={Skills}/>
-        <Route path="/about" component={About}/>
-        <Route path="/projects" component={Projects}/>
+        <Route path="/angelika" exact component={Home} />
+        <Route path="/skills" component={Skills} />
+        <Route path="/about" component={About} />
+        <Route path="/projects" component={Projects} />
       </Switch>
     </Body>
-    <Footer>Angelika Villanueva &copy; {new Date().getFullYear()}</Footer>
+    <Footer>&copy; Angelika Villanueva {new Date().getFullYear()}</Footer>
   </Router>);
 }
 

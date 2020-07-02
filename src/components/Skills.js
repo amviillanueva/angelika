@@ -4,11 +4,10 @@ import skills from './info/skills';
 import Skill from './Skill';
 
 function Skills() {
-    return(<Div className="container">
-        <h2>Skills Page</h2>
+    return(<Div className="d-flex align-content-center align-self-center justify-content-center flex-wrap flex-md-row flex-column">
         {
             skills.map(skill =>
-                <Skill name={skill.name}></Skill>
+                <Skill key={skill.id} logo={skill.logo} name={skill.name} description={skill.description}></Skill>
             )
         }
     </Div>)

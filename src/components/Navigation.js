@@ -19,7 +19,7 @@ function Navigation() {
             <ul className="navbar-nav">
                 <Li active={home} className="nav-item p-md-2 p-1">
                     <A className="nav-link" onClick={(e) => {setHome(true); setSkills(false); setAbout(false); setProjects(false); e.preventDefault()}}>
-                        <Link to="/" style={linkStyle}>HOME</Link>
+                        <Link to="/angelika" style={linkStyle}>HOME</Link>
                     </A>
                 </Li>
                 <Li active={skills} className="nav-item p-md-2 p-1">

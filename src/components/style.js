@@ -10,7 +10,8 @@ const theme = {
         title: '#0D3843',
         subTitle: '#375D70',
         content: '#4F88A3',
-        line: '#4CA7BC'
+        line: '#4CA7BC',
+        shadow: "#0D3842"
     },
     font: {
         mont: "'Montserrat', sans-serif",
@@ -139,4 +140,22 @@ export const Img = styled.img `
         height: 12rem;
         border-width: 4px;
     }
+`;
+
+export const SkillDiv = styled.div `
+    background-color: white;
+    border-radius: 5px;
+    max-width: 28%;
+    /* https://www.cssmatic.com/box-shadow */
+`;
+
+export const H4 = styled.h4 `
+    color: ${props => props.theme.color['title']};
+    font-family: ${props => props.theme.font['mont']};
+    font-weight: 600;
+`;
+
+export const Logo = styled.i `
+    color: ${props => props.theme.color['title']};
+    font-size: 5rem;
 `;
