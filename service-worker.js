@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/angelika/precache-manifest.44741ed533bbf00749a2ab5201017759.js"
+  "/angelika/precache-manifest.5a4e21e063548bc3e1e6f72330c0e107.js"
 );
 
 self.addEventListener('message', (event) => {
