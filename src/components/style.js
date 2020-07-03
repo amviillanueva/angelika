@@ -84,7 +84,7 @@ export const Footer = styled.footer `
 
 export const Div = styled.div `
     margin: ${props => props.home ? '' : '0 15%'};
-    margin-top: ${props => props.home ? '7.2%' : '3%'};
+    margin-top: ${props => props.home ? '17%' : '13%'};
     @media(max-width: 720px) {
         margin-top: 8%;
     }
