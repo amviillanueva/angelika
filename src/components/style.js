@@ -143,7 +143,7 @@ export const Img = styled.img `
 `;
 
 export const SkillDiv = styled.div `
-    background-color: white;
+    background-color: rgb(255, 255, 255, .5);
     border-radius: 5px;
     max-width: 28%;
     /* https://www.cssmatic.com/box-shadow */
