@@ -19,7 +19,7 @@ const skills = [
     id: 2,
     logo: "fab fa-js-square",
     name: "JavaScript",
-    description: "Using vanilla javascript or jQuery"
+    description: "I can use both vanilla javascript and jQuery"
   },
   {
     id: 3,
@@ -31,13 +31,13 @@ const skills = [
     id: 4,
     logo: "fab fa-git-alt",
     name: "Git",
-    description: "Version control locally and pushing it in github" 
+    description: "I use Git for version control locally and I push it in github" 
   },
   {
     id: 5,
     logo: "fab fa-php",
     name: "PHP",
-    description: "Using xampp to run apache and phpmyadmin"
+    description: "I use xampp to run apache and phpmyadmin"
   },
   {
     id: 6,

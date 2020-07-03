@@ -105,7 +105,7 @@ function Home() {
             <div className="p-md-4 p-3">
                 <H1>HI, I'M ANGELIKA</H1>
                 <H1 bottom>VILLANUEVA</H1>
-                <Sub>Web Developer</Sub>
+                <Sub>aspiring Web Developer</Sub>
                 {
                     contacts.map(contact =>
                         <ContactInfo key={contact.id} link={contact.link} logo={contact.logo} info={contact.info} />
