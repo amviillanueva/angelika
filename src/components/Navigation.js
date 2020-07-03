@@ -15,7 +15,7 @@ function Navigation() {
     };
 
     return (<Theme>
-        <Nav className="navbar navbar-expand justify-content-center sticky-top">
+        <Nav className="navbar navbar-expand justify-content-center fixed-top">
             <ul className="navbar-nav">
                 <Li active={home} className="nav-item p-md-2 p-1">
                     <A className="nav-link" onClick={(e) => {setHome(true); setSkills(false); setAbout(false); setProjects(false); e.preventDefault()}}>
