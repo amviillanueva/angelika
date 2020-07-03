@@ -13,7 +13,7 @@ const skills = [
     id: 1,
     logo: "fab fa-java",
     name: "Java",
-    description: "Using eclipse as the IDE and mySQL for the database"
+    description: "I use eclipse as the IDE and mySQL for the database"
   },
   {
     id: 2,
@@ -31,7 +31,7 @@ const skills = [
     id: 4,
     logo: "fab fa-git-alt",
     name: "Git",
-    description: "Version control locally and in github" 
+    description: "Version control locally and pushing it in github" 
   },
   {
     id: 5,

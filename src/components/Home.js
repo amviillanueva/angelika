@@ -6,8 +6,6 @@ import contacts from './info/contacts';
 import image from './images/profile.png';
 import emailjs from 'emailjs-com';
 
-// https://stackoverflow.com/questions/53648652/how-to-use-environment-variables-in-github-page
-
 function Home() {
     dotenv.config();
 
@@ -23,16 +21,33 @@ function Home() {
         message: mail.message
     };
 
-    const [success, setSuccess] = useState("none");
-    const [danger, setDanger] = useState("none");
+    const [alert, setAlert] = useState({
+        class: "alert alert-info",
+        message: "Sending...",
+        display: "none"
+    });
 
     function sendMail(e) {
         e.preventDefault()
-        console.log(templateParams)
+
+        setAlert(preVal => {
+            return {
+                class: preVal.class,
+                message: preVal.message,
+                display: "block"
+            }
+        });
+
         emailjs.send(process.env.REACT_APP_SERVICE_ID, process.env.REACT_APP_TEMPLATE_ID, templateParams, process.env.REACT_APP_USER_ID)
             .then((response) => {
                 console.log('SUCCESS!', response.status, response.text);
-                setSuccess("block");
+                setAlert(() => {
+                    return {
+                        class: "alert alert-success",
+                        message: "Message Sent!",
+                        display: "block"
+                    }
+                });
                 setMail(() => {
                     return {
                         sender: "",
@@ -42,9 +57,15 @@ function Home() {
                 });
             }, (err) => {
                 console.log('FAILED...', err);
-                setDanger("block");
+                setAlert(() => {
+                    return {
+                        class: "alert alert-danger",
+                        message: "Message Not Sent",
+                        display: "block"
+                    }
+                });
             });
-        
+
     }
 
     function newMail(e) {
@@ -98,20 +119,29 @@ function Home() {
                 <div className="modal-content">
                     <div className="modal-header">
                         <strong>Send me a Message!</strong>
-                        <button type="button" className="close" data-dismiss="modal" aria-label="Close" 
-                            onClick={() => {setSuccess("none"); setDanger("none"); setMail(() => {
-                                return {
-                                    sender: "",
-                                    email: "",
-                                    message: ""
-                            }})}}>
+                        <button type="button" className="close" data-dismiss="modal" aria-label="Close"
+                            onClick={() => {
+                                setAlert(() => {
+                                    return {
+                                        class: "alert alert-info",
+                                        message: "Sending",
+                                        display: "none"
+                                    }
+                                });
+                                setMail(() => {
+                                    return {
+                                        sender: "",
+                                        email: "",
+                                        message: ""
+                                    }
+                                })
+                            }}>
                             <span aria-hidden="true">&times;</span>
                         </button>
                     </div>
                     <form onSubmit={sendMail}>
                         <div className="modal-body">
-                        <div className="alert alert-success" style={{display: success}}> Message Sent! </div>
-                        <div className="alert alert-danger" style={{display: danger}}> Message not Sent </div>
+                            <div className={alert.class} style={{ display: alert.display }}>{alert.message}</div>
                             <div className="form-group">
                                 <input type="text" name="sender" onChange={newMail} value={mail.sender} className="form-control" placeholder="Name" />
                             </div>
