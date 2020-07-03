@@ -23,9 +23,9 @@ const skills = [
   },
   {
     id: 3,
-    logo: "fab fa-php",
-    name: "PHP",
-    description: "Using xampp to run apache and phpmyadmin"
+    logo: "fab fa-react",
+    name: "React JS",
+    description: "I use bootstrap and styled-components with react"
   },
   {
     id: 4,
@@ -35,9 +35,9 @@ const skills = [
   },
   {
     id: 5,
-    logo: "fab fa-react",
-    name: "React JS",
-    description: "Text editor: VsCode"
+    logo: "fab fa-php",
+    name: "PHP",
+    description: "Using xampp to run apache and phpmyadmin"
   },
   {
     id: 6,
