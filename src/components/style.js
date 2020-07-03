@@ -26,7 +26,7 @@ export const Theme = ({ children }) => (
 
 export const Body = styled.div `
     max-height: 100vh;
-    width: 100vw;
+    max-width: 100vw;
 `;
 
 const ImgBorder = styled.img `
