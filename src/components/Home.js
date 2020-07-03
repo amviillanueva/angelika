@@ -17,7 +17,7 @@ function Home() {
 
     const templateParams = {
         sender: mail.sender,
-        email: mail.email,
+        user_email: mail.email,
         message: mail.message
     };
 
@@ -124,7 +124,7 @@ function Home() {
                                 setAlert(() => {
                                     return {
                                         class: "alert alert-info",
-                                        message: "Sending",
+                                        message: "Sending...",
                                         display: "none"
                                     }
                                 });
