@@ -2,7 +2,8 @@ import React from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Body, Tl, Bl, Footer } from './style.js';
+import { Body, Tl, Bl, Footer, Particles } from './style.js';
+import particles from '../particles.json';
 
 import tl from './images/tl.png';
 import br from './images/br.png';
@@ -16,6 +17,7 @@ import Projects from './Projects';
 function App() {
   return (<Router>
     <Body>
+    <Particles params={particles} />
       <Tl src={tl} alt="top-left"></Tl>
       <Bl src={br} alt="bottom-right"></Bl>
       <Navigation />

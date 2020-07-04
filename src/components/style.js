@@ -1,5 +1,6 @@
 import React from 'react';
 import styled, { ThemeProvider } from 'styled-components';
+import particles from 'react-particles-js';
 
 /* font-family: 'Montserrat', sans-serif;
 font-family: 'Open Sans', sans-serif;
@@ -19,6 +20,13 @@ const theme = {
         content: "'Open Sans', sans-serif"
     }
 };
+
+export const Particles = styled(particles) `
+    position : fixed;
+    width:100vw;
+    height:100%;
+    z-index: -3;
+`;
 
 export const Theme = ({ children }) => (
     <ThemeProvider theme={theme}>{children}</ThemeProvider>
@@ -84,9 +92,9 @@ export const Footer = styled.footer `
 
 export const Div = styled.div `
     margin: ${props => props.home ? '' : '0 15%'};
-    margin-top: ${props => props.home ? '17%' : '13%'};
+    padding-top: ${props => props.home ? '17%' : '13%'};
     @media(max-width: 720px) {
-        margin-top: 18%;
+        padding-top: 20%;
     }
 `;
 
