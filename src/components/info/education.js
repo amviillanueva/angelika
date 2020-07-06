@@ -1,4 +1,4 @@
-const eduList = [
+const education = [
     {
         school: "Tertiary: Polytechnic University of the Philippines - Sta. Mesa, Manila",
         year: "(2018-Present)",
@@ -12,4 +12,4 @@ const eduList = [
     }
 ]
 
-export default eduList;
+export default education;

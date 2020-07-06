@@ -151,7 +151,7 @@ export const Img = styled.img `
 `;
 
 export const SkillDiv = styled.div `
-    background-color: rgb(255, 255, 255, .7);
+    /* background-color: rgb(255, 255, 255, .7); */
     border-radius: 5px;
     max-width: 28%;
     @media(max-width: 720px) {
