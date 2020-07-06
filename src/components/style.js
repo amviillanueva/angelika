@@ -95,6 +95,7 @@ export const Div = styled.div `
     padding-top: ${props => props.home ? '17%' : '13%'};
     @media(max-width: 720px) {
         padding-top: 20%;
+        margin: 0;
     }
 `;
 
@@ -125,8 +126,12 @@ export const P = styled.p `
 `;
 
 export const Sub = styled(P) `
-    color: ${props => props.theme.color['subTitle']};
     font-weight: 600;
+`;
+
+export const Title = styled(Sub) `
+    font-size: 1.2rem;
+    color: ${props => props.theme.color['title']};
 `;
 
 export const I = styled.i `
@@ -169,4 +174,9 @@ export const H4 = styled.h4 `
 export const Logo = styled.i `
     color: ${props => props.theme.color['title']};
     font-size: 5rem;
+`;
+
+export const AboutDiv = styled.div `
+    line-height: .5rem;
+    padding: 1rem 0;
 `;
