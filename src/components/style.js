@@ -95,7 +95,7 @@ export const Div = styled.div `
     padding-top: ${props => props.home ? '17%' : '13%'};
     @media(max-width: 720px) {
         padding-top: 20%;
-        margin: 0;
+        margin: ${props => props.home ? '' : '0 7%'};
     }
 `;
 
@@ -127,11 +127,20 @@ export const P = styled.p `
 
 export const Sub = styled(P) `
     font-weight: 600;
+    margin: 0;
 `;
+
+export const AC = styled(P) `
+    margin: 0;
+`
 
 export const Title = styled(Sub) `
     font-size: 1.2rem;
     color: ${props => props.theme.color['title']};
+    margin: 0;
+    @media(max-width: 720px) {
+        font-size: .8rem;
+    }
 `;
 
 export const I = styled.i `
@@ -177,6 +186,8 @@ export const Logo = styled.i `
 `;
 
 export const AboutDiv = styled.div `
-    line-height: .5rem;
     padding: 1rem 0;
+    @media(max-width: 720px) {
+        font-size: .6rem;
+    }
 `;
