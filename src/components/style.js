@@ -191,3 +191,11 @@ export const AboutDiv = styled.div `
         font-size: .6rem;
     }
 `;
+
+export const Hr = styled.hr `
+    border: none;
+    border-top: dotted #041114;
+    border-width: 1rem;
+    width: 5rem;
+    margin: auto;
+`;

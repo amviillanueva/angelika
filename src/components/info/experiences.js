@@ -1,8 +1,9 @@
 const experiences = [
     {
         id: 1,
-        title: "OJT at The Wizard at Worx Holding Inc. - 2019",
-        details: "Worked under MIS Department for 300 hours"
+        title: "The Wizard at Worx Holding Inc. - OJT",
+        year: "(2019 - 300hrs)",
+        details: "Worked under MIS Department by doing some basic troubleshooting"
     }
 ];
 
