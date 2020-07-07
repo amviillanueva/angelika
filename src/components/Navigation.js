@@ -36,11 +36,11 @@ function Navigation() {
                         <Link to={root + "about"} style={linkStyle}>ABOUT</Link>
                     </A>
                 </Li>
-                <Li active={projects} className="nav-item ml-md-4 px-md-1 py-md-2 ml-2 py-1">
+                {/* <Li active={projects} className="nav-item ml-md-4 px-md-1 py-md-2 ml-2 py-1">
                     <A className="nav-link" onClick={(e) => {setHome(false); setSkills(false); setAbout(false); setProjects(true); e.preventDefault()}}>
                         <Link to={root + "projects"} style={linkStyle}>PROJECTS</Link>
                     </A>
-                </Li>
+                </Li> */}
             </ul>
         </Nav>
     </Theme>);
