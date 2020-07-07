@@ -1,3 +1,4 @@
+import dotenv from 'dotenv';
 import React from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
@@ -15,6 +16,8 @@ import About from './About';
 import Projects from './Projects';
 
 function App() {
+  dotenv.config();
+  const root = process.env.REACT_APP_ROOT;
   return (<Router>
     <Body>
     <Particles params={particles} />
@@ -22,10 +25,10 @@ function App() {
       <Bl src={br} alt="bottom-right"></Bl>
       <Navigation />
       <Switch>
-        <Route path="/angelika" exact component={Home} />
-        <Route path="/skills" component={Skills} />
-        <Route path="/about" component={About} />
-        <Route path="/projects" component={Projects} />
+        <Route path={root} exact component={Home} />
+        <Route path={root + "skills"} component={Skills} />
+        <Route path={root + "about"} component={About} />
+        <Route path={root + "projects"} component={Projects} />
       </Switch>
     </Body>
     <Footer>&copy; Angelika Villanueva {new Date().getFullYear()}</Footer>

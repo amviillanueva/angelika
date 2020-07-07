@@ -1,5 +1,6 @@
 const experiences = [
     {
+        id: 1,
         title: "OJT at The Wizard at Worx Holding Inc. - 2019",
         details: "Worked under MIS Department for 300 hours"
     }
