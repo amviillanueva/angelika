@@ -1,13 +1,13 @@
 import React from 'react';
-import { AboutDiv, Theme, Title, Sub, AC } from './style';
+import { AboutDiv, Theme, Title, Sub, D } from './style';
 
 function Education(props) {
     return(<Theme>
         <AboutDiv>
             <Title>{props.title}</Title>
             <Sub>{props.sub}</Sub>
-            <AC>{props.description}</AC>
-            <AC>{props.research}</AC>
+            <D>{props.description}</D>
+            <D>{props.research}</D>
         </AboutDiv>
     </Theme>);
 }

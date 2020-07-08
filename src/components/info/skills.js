@@ -13,37 +13,54 @@ const skills = [
     id: 1,
     logo: "fab fa-java",
     name: "Java",
-    description: "I use eclipse as the IDE and mySQL for the database"
-  },
-  {
-    id: 2,
-    logo: "fab fa-js-square",
-    name: "JavaScript",
-    description: "I can use both vanilla javascript and jQuery"
-  },
-  {
-    id: 3,
-    logo: "fab fa-react",
-    name: "React JS",
-    description: "I use bootstrap and styled-components with react"
+    description: [
+      "IDE: Eclipse",
+      "Tools: MySQL Workbench and Server"
+    ]
   },
   {
     id: 4,
     logo: "fab fa-git-alt",
     name: "Git",
-    description: "I use Git for version control locally and I push it in github" 
+    description: [
+      "For version control" 
+    ]
+  },
+  {
+    id: 2,
+    logo: "fab fa-js-square",
+    name: "JavaScript",
+    description: [
+      "Code Editor: VS Code",
+      "Libraries: React JS, JQuery"
+    ]
+  },
+  {
+    id: 3,
+    logo: "fab fa-react",
+    name: "React JS",
+    description: [
+      "Code Editor: VS Code",
+      "Tools: bootstrap, styled-components"
+    ]
   },
   {
     id: 5,
     logo: "fab fa-php",
     name: "PHP",
-    description: "I use xampp to run apache and phpmyadmin"
+    description: [
+      "Code Editor: VS Code",
+      "Tools: MAMP, phpmyadmin"
+    ]
   },
   {
     id: 6,
     logo: "fab fa-node-js",
     name: "Node.js",
-    description: "With the use of express.js and mongoDB or mySQL as the database"
+    description: [
+      "Database: MongoDB",
+      "Tools/Libraries: npm, express.js"
+    ]
   }
 ];
 
