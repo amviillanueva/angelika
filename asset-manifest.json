@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.js": "/angelika/static/js/main.cce7b541.chunk.js",
-    "main.js.map": "/angelika/static/js/main.cce7b541.chunk.js.map",
+    "main.js": "/angelika/static/js/main.5759a386.chunk.js",
+    "main.js.map": "/angelika/static/js/main.5759a386.chunk.js.map",
     "runtime-main.js": "/angelika/static/js/runtime-main.fbd6a7b8.js",
     "runtime-main.js.map": "/angelika/static/js/runtime-main.fbd6a7b8.js.map",
     "static/css/2.af3c1da9.chunk.css": "/angelika/static/css/2.af3c1da9.chunk.css",
     "static/js/2.28370077.chunk.js": "/angelika/static/js/2.28370077.chunk.js",
     "static/js/2.28370077.chunk.js.map": "/angelika/static/js/2.28370077.chunk.js.map",
     "index.html": "/angelika/index.html",
-    "precache-manifest.258fc421ee5dfe81f540eeba4fb29632.js": "/angelika/precache-manifest.258fc421ee5dfe81f540eeba4fb29632.js",
+    "precache-manifest.40a9e96542cf73031f5d7073cc3df894.js": "/angelika/precache-manifest.40a9e96542cf73031f5d7073cc3df894.js",
     "service-worker.js": "/angelika/service-worker.js",
     "static/css/2.af3c1da9.chunk.css.map": "/angelika/static/css/2.af3c1da9.chunk.css.map",
     "static/js/2.28370077.chunk.js.LICENSE.txt": "/angelika/static/js/2.28370077.chunk.js.LICENSE.txt",
@@ -18,6 +18,6 @@
     "static/js/runtime-main.fbd6a7b8.js",
     "static/css/2.af3c1da9.chunk.css",
     "static/js/2.28370077.chunk.js",
-    "static/js/main.cce7b541.chunk.js"
+    "static/js/main.5759a386.chunk.js"
   ]
 }
