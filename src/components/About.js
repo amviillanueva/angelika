@@ -10,14 +10,14 @@ function About() {
         <H4 className="mt-4">EDUCATION</H4>
         {
             education.map(edu => 
-                <AboutContent key={edu.id} title={edu.school} sub={edu.year} description={edu.description} research={edu.research} />
+                <AboutContent key={edu.id} title={edu.school} sub={edu.year} description={edu.description} />
             )
         }
         <Hr className="my-3" />
         <H4 className="mt-4">EDUCATIONAL ACHIEVEMENTS</H4>
         {
             achievements.map(achievement =>
-                <AboutContent key={achievement.id} title={achievement.title} description={achievement.details} />
+                <AboutContent key={achievement.id} title={achievement.title} description={achievement.description} />
             )
         }
         <Hr className="my-3" />

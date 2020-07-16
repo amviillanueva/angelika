@@ -12,7 +12,6 @@ function Skill(props) {
                     <D>{description}</D>
                 )
             }
-            {/* <P>{props.description}</P> */}
         </SkillDiv>
     </Theme>);
 }

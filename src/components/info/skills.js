@@ -61,7 +61,16 @@ const skills = [
       "Database: MongoDB",
       "Tools/Libraries: npm, express.js"
     ]
-  }
+  },
+  // {
+  //   id: 7,
+  //   logo: "fas fa-database",
+  //   name: "Database",
+  //   description: [
+  //     "MysSQL",
+  //     "MongoDB"
+  //   ]
+  // }
 ];
 
 export default skills;
