@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "afc0ec64cebdf5a8e589592080d05ea6",
+    "revision": "c0c7b34a9fa0130fa78319650291cf91",
     "url": "/angelika/index.html"
   },
   {
@@ -16,15 +16,23 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/angelika/static/js/2.28370077.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "97c35c1d6ef2c2719714",
-    "url": "/angelika/static/js/main.5759a386.chunk.js"
+    "revision": "25ba5cf043882045a0a7",
+    "url": "/angelika/static/js/main.bf46f003.chunk.js"
   },
   {
     "revision": "a1dc123575041f1993ed",
     "url": "/angelika/static/js/runtime-main.fbd6a7b8.js"
   },
   {
+    "revision": "d7c656ddbcd8a0b6a487785bd71165f8",
+    "url": "/angelika/static/media/br.d7c656dd.svg"
+  },
+  {
     "revision": "c93a7c8ec3cdc55fde7d69fbd7f71c3c",
     "url": "/angelika/static/media/profile.c93a7c8e.png"
+  },
+  {
+    "revision": "3837e07e114fb01320b60c0936bd3a13",
+    "url": "/angelika/static/media/tl.3837e07e.svg"
   }
 ]);
