@@ -11,56 +11,42 @@ const skills = [
   // },
   {
     id: 1,
-    logo: "fab fa-java",
-    name: "Java",
-    description: [
-      "IDE: Eclipse",
-      "Tools: MySQL Workbench and Server"
-    ]
+    logo: 'fab fa-java',
+    name: 'Java',
+    description: ['IDE: Eclipse', 'Tools: MySQL Workbench and Server'],
   },
   {
     id: 4,
-    logo: "fab fa-git-alt",
-    name: "Git",
-    description: [
-      "For version control" 
-    ]
+    logo: 'fab fa-git-alt',
+    name: 'Git',
+    description: ['For version control'],
   },
   {
     id: 2,
-    logo: "fab fa-js-square",
-    name: "JavaScript",
-    description: [
-      "Code Editor: VS Code",
-      "Libraries: React JS, JQuery"
-    ]
+    logo: 'fab fa-js-square',
+    name: 'JavaScript',
+    description: ['Code Editor: VS Code', 'Libraries: React JS, JQuery'],
   },
   {
     id: 3,
-    logo: "fab fa-react",
-    name: "React JS",
+    logo: 'fab fa-react',
+    name: 'React JS',
     description: [
-      "Code Editor: VS Code",
-      "Tools: bootstrap, styled-components"
-    ]
+      'Code Editor: VS Code',
+      'Tools: bootstrap, styled-components',
+    ],
   },
   {
     id: 5,
-    logo: "fab fa-php",
-    name: "PHP",
-    description: [
-      "Code Editor: VS Code",
-      "Tools: MAMP, phpmyadmin"
-    ]
+    logo: 'fab fa-php',
+    name: 'PHP',
+    description: ['Code Editor: VS Code', 'Tools: MAMP, phpmyadmin'],
   },
   {
     id: 6,
-    logo: "fab fa-node-js",
-    name: "Node.js",
-    description: [
-      "Database: MongoDB",
-      "Tools/Libraries: npm, express.js"
-    ]
+    logo: 'fab fa-node-js',
+    name: 'Node.js',
+    description: ['Database: MongoDB', 'Tools/Libraries: npm, express.js'],
   },
   // {
   //   id: 7,
