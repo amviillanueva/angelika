@@ -6,8 +6,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import {Body, Tl, Bl, Footer, Particles} from './style.js';
 import particles from '../particles.json';
 
-import tl from './images/tl.png';
-import br from './images/br.png';
+import tl from '../images/tl.svg';
+import br from '../images/br.svg';
 
 import Navigation from './Navigation';
 import Home from './Home';
