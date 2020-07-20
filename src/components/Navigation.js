@@ -1,10 +1,8 @@
-import dotenv from 'dotenv';
 import React, { useState } from 'react';
 import { Theme, Nav, Li, A } from './style.js';
 import { Link } from 'react-router-dom';
 
 function Navigation() {
-  dotenv.config();
   const root = process.env.REACT_APP_ROOT;
 
   const [home, setHome] = useState(true);
