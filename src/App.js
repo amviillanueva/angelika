@@ -1,22 +1,20 @@
-import dotenv from 'dotenv';
 import React from 'react';
-import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
-import {Body, Tl, Bl, Footer, Particles} from './style.js';
-import particles from '../particles.json';
+import { Body, Tl, Bl, Footer, Particles } from './components/style.js';
+import particles from './particles.json';
 
-import tl from '../images/tl.svg';
-import br from '../images/br.svg';
+import tl from './assets/images/tl.svg';
+import br from './assets/images/br.svg';
 
-import Navigation from './Navigation';
-import Home from './Home';
-import Skills from './Skills';
-import About from './About';
-import Projects from './Projects';
+import Navigation from './components/Navigation';
+import Home from './components/Home';
+import Skills from './components/Skills';
+import About from './components/About';
+import Projects from './components/Projects';
 
 function App() {
-  dotenv.config();
   const root = process.env.REACT_APP_ROOT;
   return (
     <Router>

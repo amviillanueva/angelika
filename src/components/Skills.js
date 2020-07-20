@@ -1,5 +1,5 @@
 import React from 'react';
-import {Div} from './style';
+import { Div } from './style';
 import skills from './info/skills';
 import Skill from './Skill';
 
@@ -11,7 +11,8 @@ function Skills() {
           key={skill.id}
           logo={skill.logo}
           name={skill.name}
-          description={skill.description} />
+          description={skill.description}
+        />
       ))}
     </Div>
   );

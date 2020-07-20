@@ -1,7 +1,7 @@
 import dotenv from 'dotenv';
-import React, {useState} from 'react';
-import {Theme, Nav, Li, A} from './style.js';
-import {Link} from 'react-router-dom';
+import React, { useState } from 'react';
+import { Theme, Nav, Li, A } from './style.js';
+import { Link } from 'react-router-dom';
 
 function Navigation() {
   dotenv.config();

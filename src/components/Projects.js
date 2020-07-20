@@ -1,5 +1,5 @@
 import React from 'react';
-import {Div} from './style';
+import { Div } from './style';
 
 function Projects() {
   return (

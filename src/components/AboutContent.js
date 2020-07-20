@@ -1,5 +1,5 @@
 import React from 'react';
-import {AboutDiv, Theme, Title, Sub, D} from './style';
+import { AboutDiv, Theme, Title, Sub, D } from './style';
 
 function Education(props) {
   const descriptions = props.description;
@@ -9,7 +9,7 @@ function Education(props) {
         <Title>{props.title}</Title>
         <Sub>{props.sub}</Sub>
         {descriptions.map((description) => (
-          <D>{description}</D>
+          <D key={Math.random()}>{description}</D>
         ))}
       </AboutDiv>
     </Theme>

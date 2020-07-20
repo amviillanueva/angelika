@@ -1,6 +1,6 @@
 import dotenv from 'dotenv';
-import React, {useState} from 'react';
-import {Theme, Div, H1, Sub, Img} from './style';
+import React, { useState } from 'react';
+import { Theme, Div, H1, Sub, Img } from './style';
 import ContactInfo from './ContactInfo';
 import contacts from './info/contacts';
 import image from '../images/profile.png';
@@ -77,7 +77,7 @@ function Home() {
   }
 
   function newMail(e) {
-    const {name, value} = e.target;
+    const { name, value } = e.target;
 
     setMail((preVal) => {
       if (name === 'sender') {
@@ -121,7 +121,7 @@ function Home() {
         <div className="p-md-4 p-3">
           <H1>HI, I'M ANGELIKA</H1>
           <H1 bottom>VILLANUEVA</H1>
-          <Sub className="pb-3">aspiring Web Developer</Sub>
+          <Sub className="pb-3">Web Developer</Sub>
           {contacts.map((contact) => (
             <ContactInfo
               key={contact.id}
@@ -164,7 +164,7 @@ function Home() {
             </div>
             <form onSubmit={sendMail}>
               <div className="modal-body">
-                <div className={alert.class} style={{display: alert.display}}>
+                <div className={alert.class} style={{ display: alert.display }}>
                   {alert.message}
                 </div>
                 <div className="form-group">
@@ -195,7 +195,8 @@ function Home() {
                     onChange={newMail}
                     value={mail.message}
                     className="form-control"
-                    required />
+                    required
+                  />
                 </div>
               </div>
               <div className="modal-footer">

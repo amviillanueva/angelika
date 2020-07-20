@@ -1,5 +1,5 @@
 import React from 'react';
-import styled, {ThemeProvider} from 'styled-components';
+import styled, { ThemeProvider } from 'styled-components';
 import particles from 'react-particles-js';
 
 /* font-family: 'Montserrat', sans-serif;
@@ -28,7 +28,7 @@ export const Particles = styled(particles)`
   z-index: -3;
 `;
 
-export const Theme = ({children}) => (
+export const Theme = ({ children }) => (
   <ThemeProvider theme={theme}>{children}</ThemeProvider>
 );
 
@@ -146,11 +146,16 @@ export const Title = styled(Sub)`
   }
 `;
 
+export const lHome = {
+  size: "1.7rem",
+  style: { 
+    marginLeft: "0"
+  }
+};
+
 export const I = styled.i`
   color: ${(props) => props.theme.color['title']};
-  font-size: 1.7rem;
   margin-right: 0.5rem;
-  vertical-align: middle;
   &:hover {
     opacity: 0.8;
   }

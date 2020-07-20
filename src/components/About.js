@@ -1,5 +1,5 @@
 import React from 'react';
-import {Theme, Div, H4, Hr} from './style';
+import { Theme, Div, H4, Hr } from './style';
 import AboutContent from './AboutContent';
 import education from './info/education';
 import achievements from './info/achievements';
