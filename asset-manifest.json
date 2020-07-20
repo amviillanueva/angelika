@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.js": "/angelika/static/js/main.d805d154.chunk.js",
-    "main.js.map": "/angelika/static/js/main.d805d154.chunk.js.map",
+    "main.js": "/angelika/static/js/main.9a26df61.chunk.js",
+    "main.js.map": "/angelika/static/js/main.9a26df61.chunk.js.map",
     "runtime-main.js": "/angelika/static/js/runtime-main.fbd6a7b8.js",
     "runtime-main.js.map": "/angelika/static/js/runtime-main.fbd6a7b8.js.map",
     "static/css/2.af3c1da9.chunk.css": "/angelika/static/css/2.af3c1da9.chunk.css",
-    "static/js/2.b3250f32.chunk.js": "/angelika/static/js/2.b3250f32.chunk.js",
-    "static/js/2.b3250f32.chunk.js.map": "/angelika/static/js/2.b3250f32.chunk.js.map",
+    "static/js/2.f92ee28c.chunk.js": "/angelika/static/js/2.f92ee28c.chunk.js",
+    "static/js/2.f92ee28c.chunk.js.map": "/angelika/static/js/2.f92ee28c.chunk.js.map",
     "index.html": "/angelika/index.html",
-    "precache-manifest.71766cce62665857938605623a242dcb.js": "/angelika/precache-manifest.71766cce62665857938605623a242dcb.js",
+    "precache-manifest.ba011ffa647bfdd32d9c24a3fa99cd01.js": "/angelika/precache-manifest.ba011ffa647bfdd32d9c24a3fa99cd01.js",
     "service-worker.js": "/angelika/service-worker.js",
     "static/css/2.af3c1da9.chunk.css.map": "/angelika/static/css/2.af3c1da9.chunk.css.map",
-    "static/js/2.b3250f32.chunk.js.LICENSE.txt": "/angelika/static/js/2.b3250f32.chunk.js.LICENSE.txt",
+    "static/js/2.f92ee28c.chunk.js.LICENSE.txt": "/angelika/static/js/2.f92ee28c.chunk.js.LICENSE.txt",
     "static/media/br.svg": "/angelika/static/media/br.d7c656dd.svg",
     "static/media/profile.png": "/angelika/static/media/profile.c93a7c8e.png",
     "static/media/tl.svg": "/angelika/static/media/tl.3837e07e.svg"
@@ -19,7 +19,7 @@
   "entrypoints": [
     "static/js/runtime-main.fbd6a7b8.js",
     "static/css/2.af3c1da9.chunk.css",
-    "static/js/2.b3250f32.chunk.js",
-    "static/js/main.d805d154.chunk.js"
+    "static/js/2.f92ee28c.chunk.js",
+    "static/js/main.9a26df61.chunk.js"
   ]
 }
