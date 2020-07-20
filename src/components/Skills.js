@@ -9,7 +9,6 @@ function Skills() {
       {skills.map((skill) => (
         <Skill
           key={skill.id}
-          logo={skill.logo}
           name={skill.name}
           description={skill.description}
         />

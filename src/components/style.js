@@ -189,9 +189,12 @@ export const H4 = styled.h4`
   font-weight: 600;
 `;
 
+export const lSkill = {
+  size: "5rem"
+};
+
 export const Logo = styled.i`
   color: ${(props) => props.theme.color['title']};
-  font-size: 5rem;
 `;
 
 export const AboutDiv = styled.div`

@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import { Theme, Div, H1, Sub, Img } from './style';
 import ContactInfo from './ContactInfo';
 import contacts from './info/contacts';
-import image from '../images/profile.png';
+import image from '../assets/images/profile.png';
 import emailjs from 'emailjs-com';
 
 function Home() {
