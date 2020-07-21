@@ -173,10 +173,8 @@ export const Img = styled.img`
 `;
 
 export const SkillDiv = styled.div`
-  /* background-color: rgb(255, 255, 255, .7); */
-  border-radius: 5px;
-  min-width: 25%;
-  max-width: 28%;
+  border-radius: 50%;
+  min-width: 20%;
   @media (max-width: 720px) {
     max-width: 100%;
   }
