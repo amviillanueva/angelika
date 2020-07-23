@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "255d8ead522edbef56f9e76a90110a66",
+    "revision": "40a3e1246acc940d079337c8279c6b1d",
     "url": "/angelika/index.html"
   },
   {
