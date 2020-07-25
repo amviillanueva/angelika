@@ -1,6 +1,7 @@
 import React from 'react';
 import styled, { ThemeProvider } from 'styled-components';
 import particles from 'react-particles-js';
+import { NavLink as nl } from 'react-router-dom';
 
 /* font-family: 'Montserrat', sans-serif;
 font-family: 'Open Sans', sans-serif;
@@ -64,28 +65,24 @@ export const Nav = styled.nav`
   z-index: 1;
 `;
 
-export const Li = styled.li`
-  border-bottom: ${(props) =>
-    props.active
-      ? '4px solid rgb(76, 167, 188, 50%)'
-      : '4px solid rgb(76, 167, 188, 100%)'};
+export const NavLink = styled(nl)`
+  color: ${(props) => props.theme.color['title']};
+  font-family: ${(props) => props.theme.font['mont']};
+  border-bottom: 4px solid rgb(76, 167, 188, 100%);
+  text-decoration: none;
+  &:hover {
+    color: rgb(13, 56, 67, 70%);
+    text-decoration: none;
+  }
   @media (max-width: 720px) {
     border-width: 3px;
-  }
-`;
-
-export const A = styled.span`
-  font-family: ${(props) => props.theme.font['mont']};
-  opacity: 1;
-  line-height: 0;
-  &:hover {
-    color: ${(props) => props.theme.color['title']};
-    opacity: 0.7;
-  }
-  @media (max-width: 720px) {
     font-size: 0.7rem;
   }
 `;
+
+export const selected = {
+  borderBottom: '4px solid rgb(76, 167, 188, 50%)'
+};
 
 export const Footer = styled.footer`
   position: fixed;

@@ -17,17 +17,17 @@ import Projects from './components/Projects';
 function App() {
   const root = process.env.REACT_APP_ROOT;
   return (
-    <Router>
+    <Router basename={root}>
       <Body>
         <Particles params={particles} />
         <Tl src={tl} alt="top-left" />
         <Bl src={br} alt="bottom-right" />
         <Navigation />
         <Switch>
-          <Route path={root} exact component={Home} />
-          <Route path={root + 'skills'} component={Skills} />
-          <Route path={root + 'about'} component={About} />
-          <Route path={root + 'projects'} component={Projects} />
+          <Route path='/' exact component={Home} />
+          <Route path='/skills' component={Skills} />
+          <Route path='/about' component={About} />
+          <Route path='/projects' component={Projects} />
         </Switch>
       </Body>
       <Footer>&copy; Angelika Villanueva {new Date().getFullYear()}</Footer>
