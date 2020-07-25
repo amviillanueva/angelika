@@ -75,7 +75,6 @@ export const NavLink = styled(nl)`
     text-decoration: none;
   }
   @media (max-width: 720px) {
-    border-width: 3px;
     font-size: 0.7rem;
   }
 `;
