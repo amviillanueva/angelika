@@ -191,6 +191,20 @@ export const Logo = styled.i`
   color: ${(props) => props.theme.color['title']};
 `;
 
+export const lArrow = {
+  size: "2.2rem",
+  style: {
+    position: "fixed",
+    bottom: "1rem",
+    right: "1rem",
+    zIndex: "2"
+  }
+};
+
+export const Arrow = styled.div`
+  display: ${(props) => props.scrollUp ? "" : "none"};
+`
+
 export const AboutDiv = styled.div`
   padding: 1rem 0;
   @media (max-width: 720px) {
